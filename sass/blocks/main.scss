@@ -1,0 +1,29 @@
+.clinica-slide1{
+  background-image: url(/img/clinica-slide1.jpg);
+}
+.clinica-slide2{
+  background-image: url(/img/clinica-slide2.jpg);
+}
+.clinica-slide3{
+  background-image: url(/img/clinica-slide3.jpg);
+}
+.clinica-slide4{
+  background-image: url(/img/clinica-slide4.jpg);
+}
+.clinica-slide5{
+  background-image: url(/img/clinica-slide5.jpg);
+}
+.clinica-slide6{
+  background-image: url(/img/clinica-slide6.jpg);
+}
+.slider-clinica .swiper-container {
+   width: 100%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+.slider-clinica .swiper-slide {
+   background-position: center;
+   background-size: cover;
+   width: 300px;
+   height: 300px;
+ }
