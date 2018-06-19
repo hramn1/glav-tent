@@ -1,3 +1,6 @@
+.main{
+
+}
 .clinica-slide1{
   background-image: url(/img/clinica-slide1.jpg);
 }
@@ -27,3 +30,9 @@
    width: 300px;
    height: 300px;
  }
+.features{
+  background-image: url(/img/bgfeatures.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
