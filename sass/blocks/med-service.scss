@@ -3,16 +3,39 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -9px;
+    left: 0;
+    right:0;
+    height: 9px;
+    background-image:  url(/img/header_wave.png);
+    transform: rotate(180deg);
+    z-index: 100;
+  }
 }
 .med-service{
   text-align: center;
   padding: 10px 15px;
   box-shadow: 0 3px 6px 1px $black;
-  background-color: $grey-color;
   &__title{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    color: $white;
   }
   &__img{
     border-radius: 50%;
+  }
+}
+@media (min-width: 768px){
+  .med-service__title{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px){
+  .med-service__title{
+    font-size: 1.5rem;
   }
 }
