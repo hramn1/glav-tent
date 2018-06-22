@@ -63,3 +63,36 @@
     margin: 0 auto;
   }
 }
+.about__text{
+  position: relative;
+  z-index: 2;
+  &::after{
+    content: '';
+    height: 4px;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    display: block;
+    width: 100%;
+    z-index: -1;
+    margin-top: 7px;
+  }
+}
+.doctor__title{
+  position: relative;
+  z-index: 2;
+  &::before{
+    content: '';
+    height: 4px;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
+    display: block;
+    width: 100%;
+    z-index: -1;
+    margin-top: 7px;
+    margin-bottom: 12px;
+  }
+}
+.doctor-widget{
+  box-shadow: 1px 1px 4px 1px $black;
+  border-radius: 7px;
+}
