@@ -31,3 +31,21 @@ var swiperClinica = new Swiper('.slider-clinica .swiper-container', {
     el: '.swiper-pagination',
   },
 });
+var swiperDoctor = new Swiper('.doctor .swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+var swiperTestimionals = new Swiper('.testimonials .swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
