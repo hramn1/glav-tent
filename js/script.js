@@ -1,4 +1,5 @@
-'use strict'
+'use strict';
+const mobileWidth = window.matchMedia('(max-width: 767px)');
 var swiperHeader = new Swiper('.header-slider .swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
@@ -31,14 +32,25 @@ var swiperClinica = new Swiper('.slider-clinica .swiper-container', {
     el: '.swiper-pagination',
   },
 });
-var swiperDoctor = new Swiper('.doctor .swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+if(mobileWidth.matches) {
+  var swiperDoctor = new Swiper('.doctor .swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+} else {
+  var swiperDoctor = new Swiper('.doctor .swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
 var swiperTestimionals = new Swiper('.testimonials .swiper-container', {
   pagination: {
     el: '.swiper-pagination',
