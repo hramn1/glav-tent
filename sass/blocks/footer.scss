@@ -5,19 +5,25 @@
   position: relative;
 }
 .footer-menu__link{
-  color: $black;
+  color: $dark-grey;
+  padding-bottom: 10px;
+
 }
 .footer-menu__items{
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
   & li{
     margin: 10px 25px 15px 0;
+    min-width:  45%;
+    border-bottom: 1px solid $dark-grey;
   }
 }
 .footer-contact{
   margin-top: 10px;
+  color: $dark-grey;
 }
 .footer-content{
   border-bottom: 1px solid rgba(0,0,0,0.2);
