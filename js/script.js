@@ -21,6 +21,7 @@ var swiperClinica = new Swiper('.slider-clinica .swiper-container', {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
+  initialSlide: 3,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
