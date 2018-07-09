@@ -3,9 +3,18 @@ const mobileWidth = window.matchMedia('(max-width: 767px)');
 var swiperHeader = new Swiper('.header-slider .swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
+  effect: 'coverflow',
+  speed: 900,
   autoplay: {
     delay: 5500,
     disableOnInteraction: false,
+  },
+  coverflowEffect: {
+    rotate: 100,
+    stretch: 100,
+    depth: 100,
+    modifier: 1,
+    slideShadows : true,
   },
   pagination: {
     el: '.swiper-pagination',
