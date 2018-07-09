@@ -62,6 +62,21 @@
     height: 60px;
     margin: 0 auto;
   }
+  &--comfort{
+    &::before{
+      background-image: url(/img/hospital-solid.svg);
+    }
+  }
+  &--respon{
+    &::before{
+      background-image: url(/img/hospital-symbol-solid.svg);
+    }
+  }
+  &--indiv{
+    &::before{
+      background-image: url(/img/id-card-alt-solid.svg);
+    }
+  }
 }
 .about__text{
   position: relative;
