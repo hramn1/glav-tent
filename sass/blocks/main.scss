@@ -213,13 +213,14 @@
     color: $white;
     padding-left: 30px;
     position: relative;
+    display: inline-block;
     &:hover{
       color: $red;
     }
     &::before{
       content:'';
       position: absolute;
-      background-image: url(../img/notes-medical-solid.svg);
+      background-image: url(/img/notes-medical-solid.svg);
       width: 17px;
       height: 23px;
       left: 4px;
