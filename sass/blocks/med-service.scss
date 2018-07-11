@@ -31,9 +31,14 @@
   }
   &__img{
     border-radius: 50%;
-    height: 120px;
+    height: auto;
   }
 }
+@media (min-width: 576px) {
+  .med-service__img{
+    height: 140px;
+  }
+ }
 @media (min-width: 768px){
   .med-service__title{
     font-size: 1rem;
@@ -46,7 +51,7 @@
       color: $white;
     }
     &__img{
-      height: 180px;
+      height: 170px;
     }
   }
 }
