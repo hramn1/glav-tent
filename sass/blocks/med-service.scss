@@ -21,12 +21,17 @@
   text-align: center;
   padding: 10px 15px;
   box-shadow: 0 3px 6px 1px $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   &__title{
     font-size: 0.9rem;
-    color: $white;
+    color: $black;
   }
   &__img{
     border-radius: 50%;
+    height: 120px;
   }
 }
 @media (min-width: 768px){
@@ -35,7 +40,13 @@
   }
 }
 @media (min-width: 992px){
-  .med-service__title{
-    font-size: 1.5rem;
+  .med-service {
+    &__title {
+      font-size: 1.5rem;
+      color: $white;
+    }
+    &__img{
+      height: 180px;
+    }
   }
 }
