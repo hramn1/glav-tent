@@ -24,6 +24,9 @@
 .footer-contact{
   margin-top: 10px;
   color: $dark-grey;
+  & a {
+    color:inherit;
+  }
 }
 .footer-content{
   border-bottom: 1px solid rgba(0,0,0,0.2);
