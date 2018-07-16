@@ -50,6 +50,11 @@ if(mobileWidth.matches) {
       el: '.swiper-pagination',
       clickable: true,
     },
+    speed: 900,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
   });
 } else {
   var swiperDoctor = new Swiper('.doctor .swiper-container', {
@@ -59,12 +64,22 @@ if(mobileWidth.matches) {
       el: '.swiper-pagination',
       clickable: true,
     },
+    speed: 900,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
   });
 }
 var swiperTestimionals = new Swiper('.testimonials .swiper-container', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
+  },
+  speed: 900,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: '.swiper-button-next',
