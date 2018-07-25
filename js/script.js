@@ -76,9 +76,9 @@ var swiperTestimionals = new Swiper('.testimonials .swiper-container', {
     el: '.swiper-pagination',
     type: 'fraction',
   },
-  speed: 900,
+  speed: 1900,
   autoplay: {
-    delay: 5500,
+    delay: 9500,
     disableOnInteraction: false,
   },
   navigation: {
