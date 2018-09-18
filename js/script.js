@@ -86,3 +86,18 @@ var swiperTestimionals = new Swiper('.testimonials .swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+var swiperVieo = new Swiper('.video-onas .swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  speed: 1900,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
