@@ -1,435 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="css/style.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <title>Медицина плюс</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главтент</title>
 </head>
 <body>
-<header class="main-header pb-3">
+<header class="main-header">
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 mb-3 align-self-center text-center">
-        <img src="img/logo.png" alt="Логотип" width="250" height="50" class="main-header__logo">
-      </div>
-      <div class="col-md-5 align-self-center">
-        <div class="main-header__adress">
-          <p>м. Пролетарская (2 мин. пешком) </p>
-          <p>г. Москва, Волгоградский проспект, д. 4А  </p>
+    <div class="row py-3 justify-content-between">
+      <form action="/" class="col-3 ">
+        <div class="row row-cols-2">
+          <label class="text-white" for="name">Ваше имя:</label><input id="name" name="fio" type="text">
         </div>
-      </div>
-      <div class="col-md-4 my-3">
-        <div class="main-header__phone">
-          <p class="main-header__phone__1">+799999999</p>
-          <p class="main-header__phone__work">Режим работы: <br>Пн-Сб, 9:00-20:00 </p>
+        <div>
+
         </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <label class="text-white" for="tel">Ваш телефон:</label><input id="tel" name="phone" type="tel">
+        <label for="mail" class="text-white">Ваш e-mail:</label><input id="mail" name="email" type="email">
+        <label class="text-white" for="msg">Сообщение:</label><textarea id="msg" name="message"></textarea>
+        <button class="btn btn-primary" type="submit">Отправить</button>
+      </form>
+      <div  class="col-5 text-center">
+        <a class=" " href="index.html"><img src="img/logo.png" alt=""></a>
       </div>
+      <section class="col-4 contacts-info">
+        <a class="contacts-info__link contacts-info__link--mail text-white" href="">fee@mail.ru</a>
+        <a class="contacts-info__link contacts-info__link--phone text-white" href="tel:+799999 ">54545455455</a>
+        <a class="contacts-info__link contacts-info__link--phone text-white" href="#">
+          Московская область, г. Мытищи,<br>
+          Олимпийский проспект, 35Ас1
+        </a>
+        <form action="">
+          <label for="search"></label>
+          <input id="search" name="srch" type="search" placeholder="Поиск">
+        </form>
+      </section>
     </div>
-    <div class="header-slider my-3">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="header-slider__image" src="img/header-slide1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/header-slide2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/header-slide3.jpg" alt=""></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-content-around">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Цены</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Информация для пациентов</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </div>
 </header>
-<main class="main pb-4">
-  <section class="widget-med-service py-4">
+<main>
   <div class="container">
-  <div class="row">
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Эндометриоз</h2>
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <a href="inner-page.html" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Эрозия шейки матки</h2>
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Миома матки</h2>
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">УЗИ при беременности</h2>
-        <img src="img/uzi-beremennost.jpg" class="med-service__img" alt="УЗИ при беременности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Дисфункция яичников</h2>
-        <img src="img/disfunkciya-yaichinikov.jpg" class="med-service__img" alt="Дисфункция яичников">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">УЗИ матки</h2>
-        <img src="img/uzi-matki.jpg" class="med-service__img" alt="УЗИ матки">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Отсутствие менструации</h2>
-        <img src="img/otsutsrvie-menstruacii.jpg" class="med-service__img" alt="Отсутствие менструации">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Бартолинит</h2>
-        <img src="img/bartolinit.jpg" class="med-service__img" alt="Бартолинит">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Аденомиоз</h2>
-        <img src="img/adenomioz.jpg" class="med-service__img" alt="Аденомиоз">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Воспаление придатков матки</h2>
-        <img src="img/vospalenie-pridatkov.jpg" class="med-service__img" alt="Воспаление придатков матки">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Ножевая биопсия шейки матки</h2>
-        <img src="img/vidy-biopsii-shejki-matki.jpg" class="med-service__img" alt="Ножевая биопсия шейки матки">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="features py-4 text-center">
-    <div class="container">
-      <h2 class="features__title">Преимущества клиники</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="features-block">
-            <h3 class="features-block__title">Квалифицированные врачи</h3>
-            <p class="features-block__text">
-              Репутация сети клиник «Медицина Плюс» имеет более чем десятилетнюю историю! Пациентов принимают сертифицированные специалисты, регулярно повышающие квалификацию в лучших зарубежных клиниках. Будьте уверены, ваша проблема не останется без внимания!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block features-block--comfort">
-            <h3 class="features-block__title">Комфорт</h3>
-            <p class="features-block__text">
-              Прием пациентов осуществляется по предварительной записи. Как следствие – отсутствие очередей, современные условия клиники, комфорт для каждой женщины. Работа call-центра без перерывов и выходных. Для записи на прием достаточно связаться с нами по указанным на сайте контактным данным!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block features-block--respon">
-            <h3 class="features-block__title">Ответственность</h3>
-            <p class="features-block__text">
-              При необходимости вы всегда сможете оставаться на связи с лечащим врачом! Оформление сопутствующей диагностике и лечению документации осуществляется по стандартам МОЗ. Обращаясь к нам, вы получите профессиональную помощь в диагностике и лечении женских заболеваний!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block features-block--indiv">
-            <h3 class="features-block__title ">Индивидуальный подход</h3>
-            <p class="features-block__text">
-              Мы неприемлем шаблонных форматов, поэтому практикуем индивидуальный подход к каждому пациенту. Несмотря на это, наши специалисты четко соблюдают принятые стандарты при оказании медицинской помощи. Доступна поэтапная оплата услуг наличным и безналичным способом.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <article class="about py-4">
-    <div class="container">
-    <h1 class="about__title">Гинекология в клинике медицина плюс</h1>
-    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-    Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-    Aliquam libero ipsum, accumsan scelerisque consequat at, vulputate non urna.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Donec dignissim varius dui consectetur tempus. Duis sit amet elit viverra, imperdiet lorem pretium, egestas libero.
-    Donec enim diam, faucibus sed tincidunt a, suscipit ac risus.
-    Integer vitae neque sed tellus consequat eleifend eget pharetra risus. Quisque non dolor dolor.
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam leo in orci volutpat laoreet.
-    </p>
-    <h2 class="about__title">О нас </h2>
-    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-    Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-    Aliquam libero ipsum, accumsan scelerisque consequat at, vulputate non urna.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Donec dignissim varius dui consectetur tempus. Duis sit amet elit viverra, imperdiet lorem pretium, egestas libero.
-    Donec enim diam, faucibus sed tincidunt a, suscipit ac risus.
-    Integer vitae neque sed tellus consequat eleifend eget pharetra risus. Quisque non dolor dolor.
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam leo in orci volutpat laoreet.
-    </p>
-    </div>
-  </article>
+      <div class="row justify-content-between">
+        <ul class="col-3 left-menu mt-3 pt-4 bg-primary bg-gradient text-white align-self-start">
+          <li><a href="catalog.html">Главная</a></li>
+          <li><a href="catalog.html">Шатры Пагода</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Главная</a></li>
+        </ul>
+        <section class="col-8 mt-3 pt-4 ">
+          <section class="row product-list bg-primary bg-gradient justify-content-between">
+            <div class="col-md-4 col-12 product-list__item">
+              <a href="">
+                <img src="img/shatri-pagoda.png" alt="">
+                <h3>Шатры Пагода</h3>
+              </a>
+            </div>
+            <div class="col-md-4 col-12 product-list__item">
+              <a href="">
+                <img src="img/shatri-pagoda.png" alt="">
+                <h3>Шаеры Пагода</h3>
+              </a>
+            </div>
+            <div class="col-md-4 col-12 product-list__item">
+              <a href="">
+                <img src="img/shatri-pagoda.png" alt="">
+                <h3>Шаеры Пагода</h3>
+              </a>
+            </div>
+            <div class="col-md-4 col-12 product-list__item">
+              <a href="">
+                <img src="img/shatri-pagoda.png" alt="">
+                <h3>Шаеры Пагода</h3>
+              </a>
+            </div>
+          </section>
+          <section class="content">
 
-  <section class="slider-clinica">
-    <div class="container">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide clinica-slide1"></div>
-          <div class="swiper-slide clinica-slide2"></div>
-          <div class="swiper-slide clinica-slide3"></div>
-          <div class="swiper-slide clinica-slide4"></div>
-          <div class="swiper-slide clinica-slide5"></div>
-          <div class="swiper-slide clinica-slide6"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-    </div>
-  </section>
-  <section class="video-onas">
-    <div class="container">
-      <h2 class="video-onas__title py-4 text-center">Видео о нас</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide video-onas__slide1"><iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315"  src="https://www.youtube.com/embed/Zjl71-8P3Zs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-          <div class="swiper-slide video-onas__slide2"><iframe style="display: block; margin-left: auto; margin-right: auto;"  width="560" height="315" src="https://www.youtube.com/embed/TcGoyzuz_Ro" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-          <div class="swiper-slide clinica-slide3__slide3"><iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/8OMH8AeXusU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination video-onas__pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+            <h1>Проектирование, производство, продажа шатров</h1>
+
+            Шатры и тенты – быстро устанавливаемые конструкции, предназначенные для использования в спортивных учреждениях, на территории промышленных предприятий, заведений культурного и социального направления. Устройство каркасно-тентовых конструкций отличается легкостью сборки. Более того, продукция обладает высоким уровнем практичности, надежности. Если вы находитесь в поисках высококачественной продукции, предлагаем воспользоваться услугами компании «Главтент»!
+            О компании
+
+            Производственное предприятие «Главтент» осуществляет деятельность, направленную на проектирование, производство и продажу шатров и тентов, с 2007 года. Наша продукция – гарантия комфорта, удобства и функциональности. Мы знаем о каркасно-тентовых конструкциях все, а значит, начиная сотрудничество с нами, вы получаете тщательно проработанное изделие, отвечающее вашим требованиям! Более того, купить шатер или любое другое изделие у нас вы можете по доступным ценам!
+
+            Главная задача компании – профессиональная реализация пожеланий наших клиентов! Мы предлагаем лучшие товары, предоставляем высококачественные услуги, предлагая продукции различного назначения!
+            Производство шатров и тентов
+
+            Изготовление шатров и тентов осуществляется в собственных производственных цехах, оснащенных современным оборудованием. Для создания конструкций используется качественный материал, например, оцинкованная и нержавеющая сталь, алюминиевый профиль. Мы используем сырье от ведущих производитель с мировым именем! Благодаря этому, наши клиенты могут приобрести товары, которые будут выполнять возложенные на них задачи длительное время! Производство шатров осуществляется в максимально короткие сроки!
+            Проектирование конструкций
+
+            Производство шатров в Москве начинается с проектирования, выполняемого специалистами конструкторского цеха. После того, как клиент определится с продуктом, который ему необходим, наших специалисты приступают к созданию проекта будущего сооружения, используя индивидуальные параметры. Разработка проектов осуществляется посредством современного программного обеспечения!
+            В процессе проектирования тентов и шатров в обязательном порядке учитываются следующие факторы:
+
+            Конструкция металлического каркаса и расположение опор;
+            Предусматривается возможная нагрузка, например, осадки, шквалы ветра и прочее;
+            Вентиляционные заслонки;
+            И многое другое!
+
+            Обратившись к нам, вы можете быть уверены в профессионализме наших специалистов! Продажа шатров осуществляется по доступным ценам, а также мы выполняем доставку и монтаж конструкций!
+
+          </section>
+        </section>
       </div>
-    </div>
-    </div>
-  </section>
-  <section class="doctor py-5">
-    <div class="container">
-      <h2 class="doctor__title text-center py-4">Наши специалисты</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="doctor-widget">
-              <h3 class="doctor-widget__title">Пономарева Юлия Николаевна</h3>
-              <img src="/img/ponamereva.jpg" class="doctor-widget__img" alt="Пономарева">
-              <p class="doctor-widget__text">
-                <span>Специализация:</span> Акушерство, Гинекология, Онкогинекология<br>
-                <span>Квалификация:</span>  Доктор медицинских наук
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="doctor-widget">
-              <h3 class="doctor-widget__title">Федорова Юлия Владленовна</h3>
-              <img src="/img/fedorova.png" class="doctor-widget__img" alt="Федорова Юлия Владленовна">
-              <p class="doctor-widget__text">
-                <span>Специализация:</span>
-                Акушер - гинеколог, врач УЗ диагностики. Медицинский директор.<br>
-                <span>Квалификация:</span>  Высшая категория
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="doctor-widget">
-              <h3 class="doctor-widget__title">Ульянова Анастасия Владимировна</h3>
-              <img src="/img/ulyanova.png" class="doctor-widget__img" alt="Ульянова Анастасия Владимировна">
-              <p class="doctor-widget__text">
-                <span>Специализация:</span>
-                Врач-акушер-гинеколог, онкогинеколог.
-              </p>
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="doctor-widget">
-              <h3 class="doctor-widget__title">Куприенко Марина Алексеевна</h3>
-              <img src="/img/kuprienko.jpg" class="doctor-widget__img" alt="Куприенко Марина Алексеевна">
-              <p class="doctor-widget__text">
-                <span>Специализация:</span>
-                Акушер-гинеколог, гинеколог-эндокринолог, врач УЗИ высшей категории.<br>
-                <span>Квалификация:</span>  Высшая категория
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="doctor-widget">
-              <h3 class="doctor-widget__title">Попов Александр Геннадьевич</h3>
-              <img src="/img/popov.jpg" class="doctor-widget__img" alt="Попов Александр Геннадьевич">
-              <p class="doctor-widget__text">
-                <span>Специализация:</span>
-                УЗИ-специалист
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonials py-4 text-center">
-    <div class="container">
-      <h2 class="testimonials__title">Отзывы наших клиентов</h2>
-      <!-- Swiper -->
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="testimonials-inner">
-        <h3 class="testimonials-inner__title">
-          Анна Дмитриевна
-        </h3>
-        <p class="testimonials-inner__usluga">
-          <i>УЗИ Шейки матки</i>
-        </p>
-        <blockquote class="testimonials-inner__text">
-        Очень приятные впечатления от посещения клиники «Медицина Плюс». Записалась на прием за день, пришла, ждать в очереди не пришлось, сразу попала на прием к Юлии Николаевной. Очень грамотный специалист! Получила ответы на все свои вопросы, сдала назначенные анализы. Надеюсь, второй визит в этот медцентр тоже не разочарует.
-        </blockquote>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="testimonials-inner">
-        <h3 class="testimonials-inner__title">
-          Анна Дмитриевна
-        </h3>
-        <p class="testimonials-inner__usluga">
-          <i>УЗИ Шейки матки</i>
-        </p>
-        <blockquote class="testimonials-inner__text">
-          Побывала в медицинском центре один раз, и больше меня в государственную больницу не тянет. Разительно другой уровень! Также очень важно, что платные услуги не включают только лишь приветливый персонал и красивый ремонт. Посетив гинеколога, я сразу поняла, что имею дело с настоящим профессионалом. Спасибо!
-        </blockquote>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="testimonials-inner">
-        <h3 class="testimonials-inner__title">
-          Анна Дмитриевна
-        </h3>
-        <p class="testimonials-inner__usluga">
-          <i>УЗИ Шейки матки</i>
-        </p>
-        <blockquote class="testimonials-inner__text">
-«Медицина+» – это Клиника с большой буквы! От посещения остались исключительно положительные впечатления. Здесь и обстановка уютная, и оборудование неплохое, а самое главное – грамотные доктора, с которыми мне посчастливилось познакомиться. Назначенное лечение уже дает результаты, чему я безгранично рада. Теперь при необходимости буду посещать только этот гинекологический центр.
-        </blockquote>
-      </div></div>
-    <div class="swiper-slide">
-      <div class="testimonials-inner">
-        <h3 class="testimonials-inner__title">
-          Анна Дмитриевна
-        </h3>
-        <p class="testimonials-inner__usluga">
-          <i>УЗИ Шейки матки</i>
-        </p>
-        <blockquote class="testimonials-inner__text">
-На личном опыте я смогла убедиться, что здесь трудятся хорошие специалисты, я благодарна каждому из них за грамотно установленный диагноз, за отсутствие очередей, за комфортную обстановку, и, конечно же, за результативное лечение, которое мне назначили. Очень удобно, что в одном месте можно получить консультацию, сдать необходимые анализы. Также признательна лечащему доктору за полезную информацию, предоставленную по моей проблеме.
-        </blockquote>
-      </div></div>
-    <div class="swiper-slide">
-      <div class="testimonials-inner">
-        <h3 class="testimonials-inner__title">
-          Анна Дмитриевна
-        </h3>
-        <p class="testimonials-inner__usluga">
-          <i>УЗИ Шейки матки</i>
-        </p>
-        <blockquote class="testimonials-inner__text">
-Выбрала «Медицину Плюс» еще несколько лет тому назад, и ни разу не пожалела об этом. Очень радует отсутствие очередей, и возможность получить консультацию, сдать анализы буквально в течении часа. А результат лабораторных исследований можно получить на электронную почту, что крайне удобно. В целом, рада, что нашла этот центр, и теперь всегда пользуюсь только его услугами.
-        </blockquote>
-      </div></div>
+
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Add Arrows -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-    </div>
-  </section>
 </main>
-<footer class="main-footer pt-4 pb-1">
-  <div class="footer-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <nav class="footer-menu">
-            <ul class="footer-menu__items">
-              <li><a class="footer-menu__link" href="#">Востановление девственности</a></li>
-              <li><a class="footer-menu__link" href="#">Востановление девственности</a></li>
-              <li><a class="footer-menu__link" href="#">Востановление девственности</a></li>
-              <li><a class="footer-menu__link" href="#">Востановление девственности</a></li>
-              <li><a class="footer-menu__link" href="#">Востановление девственности</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-4">
-          <div class="footer-contact">
-            <p class="footer-contact__phone"> <b>Телефон</b>: +7 925 521-93-07</p>
-            <p class="footer-contact__clock"> <b>Время работы</b>: Ежедневно с 9:00 до 21:00</p>
-            <p class="footer-contact__adress"> <b>Адрес</b>: г.Москва, улица Илимская 1б</p>
-            <p class="footer-contact__mail"> <b>E-mail</b>: shinmontag@mail.ru</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      <p>&copy; 2018 &laquo;Гинекологическая клиника Медицина Плюс&raquo;</p>
-    </div>
+<footer>
+  <div class="container">
+    <p>
+
+      Крупнейший B2B рынок России, договорные цены. Предложения о продаже и покупке тентов не только в России, но и во всем мире!
+    </p>
+    <p>
+
+      © 2007—2022, ООО «Главтент»
+    </p>
   </div>
 </footer>
-<script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

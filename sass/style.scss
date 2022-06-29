@@ -1,6 +1,5 @@
-@import "variables.scss";
-@import "global.scss";
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "global";
 @import "blocks/header.scss";
-@import "blocks/med-service.scss";
-@import "blocks/main.scss";
-@import "blocks/footer.scss";
