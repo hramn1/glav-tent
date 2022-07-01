@@ -35,7 +35,7 @@ gulp.task('symbols', function() {
 gulp.task('style', function() {
     return  gulp.src('sass/style.scss', { allowEmpty: true })
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass(dartSass, gulpSass))
         .pipe(minify())
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest('build/css'))
@@ -57,7 +57,7 @@ gulp.task('html:copy', function() {
         .pipe(gulp.dest('build'));
 });
 
-gulp.task('html:update', gulp.series(gulp.task('html:copy'), function(done) {
+gulp.task('html:update', gulp.series(gulp.task('html:copy'),  function(done) {
     server.reload();
     done();
 }));

@@ -13,37 +13,35 @@
 <header class="main-header">
   <div class="container">
     <div class="row py-3 justify-content-between">
-      <form action="/" class="col-3 ">
-        <div class="row row-cols-2">
+      <form action="/" class="col-lg-4 form-callback order-lg-0 order-1">
+        <div class="row py-1">
           <label class="text-white" for="name">Ваше имя:</label><input id="name" name="fio" type="text">
         </div>
-        <div>
-
+        <div class="row py-1">
+          <label class="text-white" for="tel">Ваш телефон:</label><input id="tel" name="phone" type="tel">
         </div>
-        <div>
-
+        <div class="row py-1">
+          <label for="mail" class="text-white">Ваш e-mail:</label><input id="mail" name="email" type="email">
         </div>
-        <div>
-
+        <div class="row py-1">
+          <label class="text-white" for="msg">Сообщение:</label><textarea id="msg" name="message"></textarea>
+          <button class="btn btn-primary" type="submit">Отправить</button>
         </div>
-        <label class="text-white" for="tel">Ваш телефон:</label><input id="tel" name="phone" type="tel">
-        <label for="mail" class="text-white">Ваш e-mail:</label><input id="mail" name="email" type="email">
-        <label class="text-white" for="msg">Сообщение:</label><textarea id="msg" name="message"></textarea>
-        <button class="btn btn-primary" type="submit">Отправить</button>
       </form>
-      <div  class="col-5 text-center">
+      <div  class="col-lg-4 order-0 order-lg-1 text-center">
         <a class=" " href="index.html"><img src="img/logo.png" alt=""></a>
       </div>
-      <section class="col-4 contacts-info">
+      <section class="col-lg-4 order-2 contacts-info">
         <a class="contacts-info__link contacts-info__link--mail text-white" href="">fee@mail.ru</a>
         <a class="contacts-info__link contacts-info__link--phone text-white" href="tel:+799999 ">54545455455</a>
-        <a class="contacts-info__link contacts-info__link--phone text-white" href="#">
+        <a class="contacts-info__link contacts-info__link--adress text-white" href="#">
           Московская область, г. Мытищи,<br>
           Олимпийский проспект, 35Ас1
         </a>
         <form action="">
           <label for="search"></label>
           <input id="search" name="srch" type="search" placeholder="Поиск">
+          <button class="btn btn-primary">Найти</button>
         </form>
       </section>
     </div>
@@ -52,44 +50,48 @@
 <main>
   <div class="container">
       <div class="row justify-content-between">
-        <ul class="col-3 left-menu mt-3 pt-4 bg-primary bg-gradient text-white align-self-start">
-          <li><a href="catalog.html">Главная</a></li>
-          <li><a href="catalog.html">Шатры Пагода</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Главная</a></li>
-        </ul>
-        <section class="col-8 mt-3 pt-4 ">
-          <section class="row product-list bg-primary bg-gradient justify-content-between">
-            <div class="col-md-4 col-12 product-list__item">
+        <div  class="col-3 left-menu mt-3 pt-4 text-white align-self-start">
+          <h3 >Меню</h3>
+          <ul>
+            <li><a href="catalog.html">Главная</a></li>
+            <li><a href="catalog.html">Шатры Пагода</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Главная</a></li>
+          </ul>
+        </div>
+
+        <section class="col-8 mt-3 pt-4">
+          <section class="row product-list justify-content-between">
+            <div class="col-lg-4 col-12 product-list__item text-center">
               <a href="">
                 <img src="img/shatri-pagoda.png" alt="">
                 <h3>Шатры Пагода</h3>
               </a>
             </div>
-            <div class="col-md-4 col-12 product-list__item">
+            <div class="col-lg-4 col-12 product-list__item text-center">
               <a href="">
                 <img src="img/shatri-pagoda.png" alt="">
                 <h3>Шаеры Пагода</h3>
               </a>
             </div>
-            <div class="col-md-4 col-12 product-list__item">
+            <div class="col-lg-4 col-12 product-list__item text-center">
               <a href="">
                 <img src="img/shatri-pagoda.png" alt="">
                 <h3>Шаеры Пагода</h3>
               </a>
             </div>
-            <div class="col-md-4 col-12 product-list__item">
+            <div class="col-lg-4 col-12 product-list__item text-center">
               <a href="">
                 <img src="img/shatri-pagoda.png" alt="">
                 <h3>Шаеры Пагода</h3>
