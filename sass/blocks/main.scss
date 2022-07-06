@@ -25,4 +25,23 @@ main{
 .product-list{
   background-color: #0c5285;
   border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  & h3{
+    font-size: 120%;
+  }
+  & a{
+    color: $white;
+    &:hover{
+      color: darken($white, 20)
+    }
+  }
+}
+.main-page{
+  & p {
+    color: $blue-text;
+  }
+  & li {
+    color: $blue-text;
+  }
 }
