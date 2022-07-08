@@ -13,7 +13,7 @@
 <header class="main-header">
   <div class="container">
     <div class="row px-3 py-3 justify-content-between">
-      <form action="/" class="col-lg-4 form-callback order-lg-0 order-1">
+      <form action="/" class="col-xl-4 col-md-6 form-callback order-xl-0 order-1">
         <div class="row py-1">
           <label class="text-white" for="name">Ваше имя:</label><input id="name" name="fio" type="text">
         </div>
@@ -28,20 +28,20 @@
           <button class="btn btn-primary" type="submit">Отправить</button>
         </div>
       </form>
-      <div  class="col-lg-4 order-0 order-lg-1 text-center">
+      <div  class="col-xl-4 col-md-12 mb-md-1 order-0 order-xl-1 text-center">
         <a class=" " href="index.html"><img src="img/logo.png" alt=""></a>
       </div>
-      <section class="col-lg-4 order-2 contacts-info">
+      <section class="col-xl-4 col-md-5  order-2 ms-md-1 ms-lg-0 contacts-info">
         <a class="contacts-info__link contacts-info__link--mail text-white" href="">fee@mail.ru</a>
         <a class="contacts-info__link contacts-info__link--phone text-white" href="tel:+799999 ">54545455455</a>
         <a class="contacts-info__link contacts-info__link--adress text-white" href="#">
           Московская область, г. Мытищи,<br>
           Олимпийский проспект, 35Ас1
         </a>
-        <form action="">
-          <label for="search"></label>
-          <input id="search" name="srch" type="search" placeholder="Поиск">
-          <button class="btn btn-primary">Найти</button>
+        <form class="d-flex" action="">
+          <label for="search" class="mt-1"></label>
+          <input id="search" class="mt-1" name="srch" type="search" placeholder="Поиск">
+          <button class="btn btn-primary mt-1">Найти</button>
         </form>
       </section>
     </div>
@@ -148,10 +148,12 @@
     <div class="row  justify-content-between py-5">
       <p class="col-md-6">
         Крупнейший B2B рынок России, договорные цены. <br>
-        Предложения о продаже и покупке тентов не только в России, но и во всем мире!
+        Предложения о продаже и покупке тентов не только <br>в России, но и во всем мире!
       </p>
-      <div class="col-md-6 ">
-        <a class="social social--watsapp" href=""></a>
+      <div class="col-md-6 text-end">
+        <a class="social social--tg " href=""><span class="visually-hidden">Telegram</span></a>
+        <a class="social social--whatsapp " href=""><span class="visually-hidden">WhatsApp</span></a>
+
         <p class="copyright">
           © 2007—2022, ООО «Главтент»
         </p>

@@ -15,7 +15,7 @@
     resize: none;
   }
   & .btn{
-    width: 30%;
+    width: 150px;
     margin: 10px 0 5px;
   }
 }
@@ -65,7 +65,8 @@
     }
     & input{
       margin-left: 10px;
-
+      line-height: 1.5rem;
+      max-width: 70%;
     }
   }
 }

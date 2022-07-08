@@ -2,4 +2,31 @@
   background-color: $bg-footer;
   background-image: url("../img/bgf.png");
   background-size: cover;
+  color: $white;
+}
+.copyright{
+  text-align: right;
+  margin-top: 20px;
+}
+.social{
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  margin-left: auto;
+  &::before{
+    @include pseudoEl(30px, 30px)
+  }
+  &--tg::before{
+    background-image: url("../img/telegram.svg");
+    left: -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &--whatsapp::before{
+    background-image: url("../img/whatsapp.svg");
+    left: -10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
