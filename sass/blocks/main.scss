@@ -1,6 +1,7 @@
 main{
   background-color: $main-bg;
   padding-bottom: 40px;
+  min-height: 70vmin;
 }
 .left-menu{
   background-color: #0c5285;
@@ -43,5 +44,65 @@ main{
   }
   & li {
     color: $blue-text;
+  }
+}
+.catalog-item{
+  margin-bottom: 20px;
+  &__title{
+    font-size: 110%;
+  }
+  &__desc{
+    list-style: none;
+    padding: 0;
+    & li{
+      padding: 5px 5px;
+      color: $top-head;
+       &.catalog-item__price{
+        color: #0d780d;
+      }
+    }
+  }
+}
+.gallery-shatri{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & img{
+    width: 24%;
+  }
+}
+table.bright {
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.bright th {
+  color: #ffffff;
+  background: #2b5385;
+  background: -moz-linear-gradient(top,#1188F0 0%,#2b5385 60%);
+  background: -ms-linear-gradient(top,#1188F0 0%,#2b5385 60%);
+  background: -o-linear-gradient(top,#1188F0 0%,#2b5385 60%);
+  background: -webkit-linear-gradient(top,#1188F0 0%,#2b5385 60%);
+}
+table.bright tr:nth-child(2n) {
+  background: #f4f6f7;
+}
+table.bright th, table.bright td {
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  text-align: left;
+  padding: 7px;
+}
+.content-price{
+  color: #0d780d;
+}
+@media (max-width: 767.98px) {
+  .gallery-shatri {
+  & img{
+    width: 48%;
+    margin-bottom: 5px;
+  }
   }
 }

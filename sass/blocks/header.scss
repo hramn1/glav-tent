@@ -5,13 +5,14 @@
 }
 .form-callback {
   & input {
-    width: 70%;
+    max-width: 70%;
+    //width: 50%;
   }
   & label {
     width: 30%;
   }
   & textarea{
-    width: 70%;
+    max-width: 70%;
     resize: none;
   }
   & .btn{
@@ -67,6 +68,20 @@
       margin-left: 10px;
       line-height: 1.5rem;
       max-width: 70%;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .form-callback {
+    & input {
+      max-width: 60%;
+    }
+    & label{
+      max-width: 40%;
+      font-size: 12px;
+    }
+    & textarea{
+      max-width: 60%;
     }
   }
 }
